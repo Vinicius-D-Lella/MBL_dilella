@@ -1,0 +1,42 @@
+.porta-vozes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+.porta-vozes-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5%;
+    width: 66%;
+    align-items: center;
+
+    .porta-vozes-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 20px;
+        margin: 0 auto;
+        padding: 20px;
+            h1{
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .description{
+            width: 60%;
+            max-width: 800px;
+                    h2{
+            font-size: 13px;
+            color: #888888;
+            text-align: justify;
+            font-weight: 600;
+            line-height: 25px;
+        }
+        }
+    }
+}
+}

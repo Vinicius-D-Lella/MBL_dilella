@@ -1,0 +1,49 @@
+header {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 80px;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+
+
+    .navbar {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: min-content;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 1px;
+
+    }
+
+    .nav-items {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        list-style: none;
+        font-weight: 500;
+    }
+
+    .newsletter-button {
+        border-radius: 6px;
+        padding: 12px 22px;
+        cursor: pointer;
+        background-color: #5cbcae;
+        border: none;
+        color: #f7f5ff;
+        font-family: inherit;
+        font-weight: 500;
+    }
+}

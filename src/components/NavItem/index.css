@@ -1,0 +1,13 @@
+.nav-item{
+    a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #666666;
+
+        &:hover,
+        &.active {
+            color: #47d1bc;
+            border-bottom: 2px solid #47d1bc;
+    }
+}
+}

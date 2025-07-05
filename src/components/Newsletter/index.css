@@ -1,0 +1,123 @@
+*{
+    background-color: white;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: sticky;
+    padding: 0 20px;
+    background-color: #f9f9f9;
+    color: gray;
+    gap: 5%;
+    
+
+
+    .newsletter-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+
+        p {
+            color: black;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .newsletter-image {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            padding: 20px 0;
+
+            h2{
+                color: black;
+                padding-left: 20px;
+            }
+        }
+    }
+    .newsletter-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        padding: 20px 0;
+
+        .newsletter-inputs {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: white;
+            width: 100%;
+
+            p{
+                color: gray;
+                font-size: 12px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+
+            input {
+                width: 100%;
+                padding: 10px;
+                background-color: #f9f9f9;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 0;
+            }
+        }
+        .newsletter-checkbox {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-bottom: 10px;
+
+            p{
+                color: gray;
+                font-size: 10px;
+                font-weight: 400;
+            }
+            input {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+                color: #eb894f;
+            }
+            input:checked {
+                background-color: #eb894f;
+            }
+        }
+        .newsletter-button {
+        border-radius: 6px;
+        padding: 12px 22px;
+        cursor: pointer;
+        background-color: #5cbcae;
+        border: none;
+        color: #f7f5ff;
+        font-family: inherit;
+        font-weight: 500;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+           &:hover {
+                background-color: #924953;
+            }
+           
+           button {
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                border: none;
+                color: inherit;
+                font-family: inherit;
+                font-weight: inherit;
+                cursor: pointer;
+           }
+        }
+    }
+}

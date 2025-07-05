@@ -1,0 +1,34 @@
+.pvlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+
+    .pvlist-buttons{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        p{
+            font-size: 12px;
+
+            &:hover {
+                background-color: #7a3f4a;
+            }
+        }
+    }
+
+
+.pvlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+}
