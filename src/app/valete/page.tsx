@@ -48,7 +48,6 @@ export default function valete() {
                     </div>
                 </div>
             </div>
-            <div className="valete-black-bar"></div>
         </div>
     </div>
     );
