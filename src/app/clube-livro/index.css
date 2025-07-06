@@ -23,8 +23,9 @@
             background: transparent;
 
                 .clube-livro-title{
-                font-size: 65px;
+                font-size: 90px;
                 font-weight: 700;
+                line-height: 0.9em;
                 background: transparent;
             }
     }
@@ -35,7 +36,7 @@
         width: 860px;
         padding: 40px 20px 20px 20px;
         p{ 
-            font-size: 14px;
+            font-size: 18px;
             margin-bottom: 1rem;
         }
     }
@@ -83,7 +84,7 @@
 
             .clube-livro-bar-text{
                 color: #000;
-                font-size: 18px;
+                font-size: 22px;
                 font-weight: 600;
                 margin-bottom: 10px;
                 background-color: transparent;
@@ -94,7 +95,7 @@
                 background-color: #cc0000;
                 color: #fff;
                 border: none;
-                padding: 10px 15px;
+                padding: 15px 20px;
                 border-radius: 8px;
                 cursor: pointer;
 
@@ -103,6 +104,7 @@
                     text-decoration: none;
                     color: #fff;
                     font-weight: 600;
+                    font-size: 18px;
                 }
 
                 &:hover {

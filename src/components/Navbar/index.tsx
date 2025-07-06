@@ -16,7 +16,8 @@ export default function Navbar() {
         { url: "/festival", label: "Festival" },
         { url: "/porta-vozes", label: "Nossos Porta-Vozes" },
         { url: "/noticias", label: "Notícias" },
-        { url: "/elite", label: "Elite" }
+        { url: "/elite", label: "Elite" },
+        { url: "https://loja.mbl.org.br/", label: "Loja" }
     ];
 
     const pathname = usePathname();
@@ -34,6 +35,7 @@ export default function Navbar() {
                     width={74} 
                     height={28}/> 
                 </Link>
+                <div className="nav-right">
                 <ul className="nav-items">
                    { items.map((item, index) => (
                         <NavItem 
@@ -46,7 +48,7 @@ export default function Navbar() {
                 <button className="newsletter-button">
                     Inscreva-se na nossa Newsletter
                 </button>
-
+                </div>
             </nav> 
         </header>
     );

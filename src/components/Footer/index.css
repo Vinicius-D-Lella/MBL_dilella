@@ -7,7 +7,7 @@
         position: sticky;
         bottom: 0;
         width: 100%;
-        padding: 20px 3%;
+        padding: 20px 3% 10px 3%;
         background-color: #eeeeee;
         color: gray;
 
@@ -18,14 +18,14 @@
             align-items: center;
 
             a{
-                    background-color: transparent;
+                background-color: transparent;
             }
             .logo_footer {
                 background-color: transparent;
             }
         }
         .footer-right {
-                background-color:transparent;
+            background-color:transparent;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -43,6 +43,6 @@
         .direitos{
                 background-color: transparent;
             font-size: 10px;
-            margin-bottom: 10px;
+            font-weight: 400;
         }
     }

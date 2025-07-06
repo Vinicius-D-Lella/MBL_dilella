@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import {Poppins} from "next/font/google";
+import { Afacad } from "next/font/google";
 import "./styles.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 
-const poppins = Poppins({
+const afacad = Afacad({
   subsets: ["latin"],
-  weight: ["100","200","300","400", "500", "600", "700","800","900"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
 return (
     <html lang="pt-BR">
-      <body className={poppins.className}>
+      <body className={afacad.className}>
         <Navbar />
         {children}
         <Newsletter/>

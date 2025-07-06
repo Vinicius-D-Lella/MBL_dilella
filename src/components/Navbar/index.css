@@ -19,12 +19,17 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     height: min-content;
-    justify-content: space-evenly;
-    max-width: 1200px;
+    justify-content: space-between;
+    padding: 0 40px;
     overflow: visible;
-    padding: 0;
     position: relative;
-    width: 1px;
+
+        .nav-right {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
 
     }
 
@@ -33,7 +38,9 @@ header {
         gap: 15px;
         align-items: center;
         list-style: none;
+        font-size: 25px;
         font-weight: 500;
+
     }
 
     .newsletter-button {
