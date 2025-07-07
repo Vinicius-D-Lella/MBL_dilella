@@ -10,12 +10,12 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
     const items : NavItemInterface[] = [
-        { url: "/mbl", label: "MBL" },
-        { url: "/valete", label: "Valete +" },
-        { url: "/clube-livro", label: "Clube do Livro" },
+        { url: "/MBL_dilella/mbl", label: "MBL" },
+        { url: "/MBL_dilella/valete", label: "Valete +" },
+        { url: "/MBL_dilella/clube-livro", label: "Clube do Livro" },
         { url: "https://festival.mbl.org.br/", label: "Festival" },
-        { url: "/porta-vozes", label: "Nossos Porta-Vozes" },
-        { url: "/noticias", label: "Notícias" },
+        { url: "/MBL_dilella/porta-vozes", label: "Nossos Porta-Vozes" },
+        { url: "/MBL_dilella/noticias", label: "Notícias" },
         { url: "https://elite.mbl.org.br/", label: "Elite" },
         { url: "https://loja.mbl.org.br/", label: "Loja" }
     ];
@@ -27,7 +27,7 @@ export default function Navbar() {
         <header>
             <nav className="navbar">
                 <Link
-                href="/">
+                href="/MBL_dilella/">
                     <Image 
                     alt="logo do header" 
                     src="logo_mbl.svg"
