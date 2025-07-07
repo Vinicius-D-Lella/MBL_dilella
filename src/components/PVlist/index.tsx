@@ -6,7 +6,7 @@ import "./index.css";
 
 export default function PVlist() {
 
-    const [portaVozes, setPortaVozes] = useState([
+    const portaVozes = [
     {
         id: 1,
         name: "Renan Santos",
@@ -327,7 +327,8 @@ export default function PVlist() {
         src: "https://framerusercontent.com/images/EKUYIFpqBqTgeeISroikQfsE.webp",
         tags: ["Nordeste"],
     },
-]);
+]
+
     const [filteredPortaVozes, setFilteredPortaVozes] = useState(portaVozes);
 
     const [buttonPressed, setButtonPressed] = useState("Todos");
