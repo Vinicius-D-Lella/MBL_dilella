@@ -1,4 +1,3 @@
-import Link from "next/link";
 import "./index.css";
 
 export interface NavItemInterface{
@@ -7,14 +6,15 @@ export interface NavItemInterface{
     isActive?: boolean;
 }
 
-
+// Esse target ai embaixo foi o copilot que recomendou, meritos dele, eu ia fazer um boolean na interface e fazer um if ternario, mas a ia foi mais inteligente que eu
 export default function NavItem(props: NavItemInterface) {
     return (
                     <li className="nav-item">
-                        <Link 
+                        <a
                         href={props.url} 
+                        target={props.url.startsWith('http') ? '_blank' : '_self'}
                         className={`nav-link ${props.isActive ? 'active' : ''}`}>
-                        {props.label}</Link>
+                        {props.label}</a>
                     </li>
     );
 

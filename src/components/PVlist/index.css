@@ -4,19 +4,22 @@
     align-items: center;
     width: 100%;
     padding: 20px;
+    background-color: transparent;
 
     .pvlist-buttons{
         display: flex;
         justify-content: center;
         flex-direction: row;
-        gap: 10px;
-        margin-bottom: 20px;
+        gap: 20px;
+        background-color: transparent;
 
         p{
-            font-size: 12px;
-
-            &:hover {
-                background-color: #7a3f4a;
+            color: #999999;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: transparent;
+            &.active {
+                color: #000;
             }
         }
     }
@@ -29,6 +32,7 @@
     gap: 20px;
     padding: 20px;
     width: 100%;
+    background-color: transparent;
 }
 
 }
