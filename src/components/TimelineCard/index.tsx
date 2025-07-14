@@ -1,3 +1,4 @@
+import { title } from 'process';
 import './index.css';
 
 export interface TimelineCardInterface{
@@ -27,9 +28,12 @@ export default function TimelineCard(props: TimelineCardInterface) {
 
             </div>
             <div className={`timeline-card-${props.year}-content`} id='timeline-card-content'>
-                {
-
-
+                {props.events.map((event, index) => (
+                    <h2>
+                        <strong>{event.title}</strong><br/>
+                        {event.description}
+                    </h2>
+                ))
                 }
 
                 <div className={`timeline-card-${props.year}-content-texts`} id='timeline-card-content-texts'>

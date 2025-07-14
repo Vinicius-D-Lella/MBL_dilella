@@ -4,6 +4,7 @@
     width: 500px;
     height: 100%;
     position: relative;
+    gap: 20px;
 
     #timeline-card-color{
         background-color: transparent;
@@ -26,6 +27,17 @@
         h2{
             background-color: transparent;
             color: white;
+        }
+    }
+    #timeline-card-content{
+        width: 320px;
+        height: min-content;
+        h2{
+            font-weight: 400;
+            width: 320px;
+            strong{
+                font-weight: 700;
+            }
         }
     }
 }
