@@ -1,13 +1,10 @@
-*{
-    background-color: white;
-}
-
 #newsletter {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     position: sticky;
     padding: 0 20px;
+    padding-bottom: 50px;
     background-color: #f9f9f9;
     color: gray;
     gap: 5%;
@@ -19,11 +16,15 @@
         flex-direction: column;
         align-items: center;
         width: 35%;
+        background-color: transparent;
+            width: 400px;
 
         p {
             color: black;
             font-size: 18px;
             font-weight: 400;
+                    background-color: transparent;
+
         }
 
         .newsletter-image {
@@ -31,10 +32,13 @@
             justify-content: flex-start;
             width: 100%;
             padding: 20px 0;
+            background-color: transparent;
 
             h2{
                 color: black;
                 padding-left: 20px;
+                background-color: transparent;
+
             }
         }
     }
@@ -44,22 +48,27 @@
         align-items: center;
         width: 35%;
         padding: 20px 0;
+        background-color: transparent;
+        width: 400px;
+
 
         .newsletter-inputs {
+            background-color: transparent;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            background-color: white;
             width: 100%;
 
             p{
                 color: gray;
+                background-color: transparent;
                 font-size: 12px;
                 font-weight: 400;
                 margin-bottom: 10px;
             }
 
             input {
+                background-color: transparent;
                 width: 100%;
                 padding: 10px;
                 background-color: #f9f9f9;
@@ -69,6 +78,7 @@
             }
         }
         .newsletter-checkbox {
+            background-color: transparent;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -77,21 +87,25 @@
             margin-bottom: 10px;
 
             p{
+                background-color: transparent;
                 color: gray;
                 font-size: 10px;
                 font-weight: 400;
             }
             input {
+                background-color: transparent;
                 width: 20px;
                 height: 20px;
                 margin-right: 10px;
                 color: #eb894f;
             }
             input:checked {
+                background-color: transparent;
                 background-color: #eb894f;
             }
         }
         .newsletter-button {
+        background-color: transparent;
         border-radius: 6px;
         padding: 12px 22px;
         cursor: pointer;

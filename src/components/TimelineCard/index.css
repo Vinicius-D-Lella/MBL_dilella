@@ -1,0 +1,31 @@
+#timeline-card{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 100%;
+    position: relative;
+
+    #timeline-card-color{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        .image-container{
+            background-color: transparent;
+            width: 350px;
+            height: 278px;
+                    img{
+                        mix-blend-mode: multiply;
+            position: absolute;
+            width: 75%;
+            left: -50px;
+            bottom: 0;
+            background-color: transparent;
+        }
+
+        }
+        h2{
+            background-color: transparent;
+            color: white;
+        }
+    }
+}

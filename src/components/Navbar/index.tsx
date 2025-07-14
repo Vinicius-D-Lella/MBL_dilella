@@ -15,6 +15,7 @@ export default function Navbar() {
         { url: "/clube-livro", label: "Clube do Livro" },
         { url: "https://festival.mbl.org.br/", label: "Festival" },
         { url: "/porta-vozes", label: "Nossos Porta-Vozes" },
+        { url: "/eventos", label: "Eventos" },
         { url: "/noticias", label: "Notícias" },
         { url: "https://elite.mbl.org.br/", label: "Elite" },
         { url: "https://loja.mbl.org.br/", label: "Loja" }

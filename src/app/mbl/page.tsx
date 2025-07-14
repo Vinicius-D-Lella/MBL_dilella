@@ -1,13 +1,18 @@
+import TimelineRoll from "@/components/TimelineRoll"
+import "./index.css";
+
 export default function mbl() {
     return (
     <div className="mbl-page">
 
         <div className="mbl-header">
             <div className="mbl-header-image">
-                <h1>MBL</h1>
-            </div>
-            <div className="mbl-header-image">
-                <img src="https://framerusercontent.com/images/nvW0f3GvV8hPHn7bHKo8EpAXA.webp?scale-down-to=1024" alt="Imagem do Movimento Brasil Livre" />
+                <div className="mbl-header-h1">
+                    <h1>MBL</h1>
+                </div>
+                <div className="mbl-header-image-content">
+                    <img src="https://framerusercontent.com/images/nvW0f3GvV8hPHn7bHKo8EpAXA.webp?scale-down-to=1024" alt="Imagem do Movimento Brasil Livre" />
+                </div>
             </div>
         </div>
         <div className="mbl-content">
@@ -42,37 +47,19 @@ export default function mbl() {
                     <div className="mbl-bar-cyan-left">
                     </div>
                     <div className="mbl-bar-cyan-right">
+                        <div className="mbl-bar-cyan-right-text">
+                            <p>O MBL quer contratar você! <br/> Entre na Academia MBL</p>
+                        </div>
+                        <div className="academia-button">
+                            <a href="https://academia.mbl.org.br/" target="_blank" rel="noopener noreferrer">
+                            Inscreva-se para a próxima turma!
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>    
         </div>
-
-        <div className="mbl-timeline-card">
-            <h2 className="mbl-title">Timeline do Movimento Brasil Livre</h2>
-            <div className="mbl-timeline">
-                <div className="mbl-timeline-2014">
-                </div>
-                <div className="mbl-timeline-2015">
-                </div>
-                <div className="mbl-timeline-2016">
-                </div>
-                <div className="mbl-timeline-2017">
-                </div>
-                <div className="mbl-timeline-2018">
-                </div>
-                <div className="mbl-timeline-2019">
-                </div>
-                <div className="mbl-timeline-2020">
-                </div>
-                <div className="mbl-timeline-2021">
-                </div>
-                <div className="mbl-timeline-2022">
-                </div>
-                <div className="mbl-timeline-2023">
-                </div>
-                <div className="mbl-timeline-2024">
-                </div>
-            </div>
-        </div>
-    </div>);
+            <TimelineRoll/>
+    </div>
+    );
 }
