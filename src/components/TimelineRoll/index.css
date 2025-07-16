@@ -1,4 +1,16 @@
 .timeline-rool{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+
+    .mbl-title{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    text-align: left;
+    }
 
     .timeline-cards{
         padding-top: 50px;
