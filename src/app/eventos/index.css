@@ -1,0 +1,12 @@
+.eventos-container{
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    gap: 60px;
+    height: min-content;
+    max-width: 100%;
+    padding: 10px;
+    position: relative;
+    width: 700px;
+}

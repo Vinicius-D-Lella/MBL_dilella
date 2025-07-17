@@ -1,0 +1,136 @@
+.event-card{
+    place-content: center flex-start;
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column wrap;
+    gap: 30px 0px;
+    height: min-content;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+
+    .event-card-header{
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column;
+    gap: 0px;
+    height: min-content;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+
+        .event-card-title{
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        transform: none;
+
+            h4{
+                font-family: "Inter", "Inter Placeholder", sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                letter-spacing: -0.04em;
+                line-height: 1.4em;
+                color: black;
+                text-align: start;
+            }
+
+        }
+
+        .event-card-subtitle{
+
+            p{
+                font-weight: 400;
+                font-size: 18px;
+                color: #888;
+                text-align: start;
+            }
+        }
+
+    }
+
+    .event-card-infos{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+        .event-card-banner{
+            height:  125px;
+            max-width: 100%;
+            position: relative;
+            width: 250px;
+            border-radius: 12px;
+            
+            .event-card-image-container{
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+
+                img{
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                object-fit: cover;
+                
+                }
+            }
+        }
+
+        .event-card-info{
+            display: flex;
+            flex-direction: row;
+
+            .event-card-info-container{
+                color: #666;
+                font-size: 18px;                
+                strong{
+                    font-weight: bolder;
+                }
+
+                .hour{
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .event-card-button{
+
+        a{
+            padding: 6px 30px;
+            background-color: #5cbcaa;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            color: white;
+            transition: 0.3s;
+            text-decoration: none;
+
+            &:hover{
+            background-color:#eb894f;
+            }
+        }
+
+
+        }
+    }
+    .event-card-bar{
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row;
+    gap: 10px;
+    height: 2px;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    width: 75%;
+    }
+}

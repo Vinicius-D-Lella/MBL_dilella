@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
 return (
     <html lang="pt-BR">
-      <body className={afacad.className}>
+      <body id="body" className={afacad.className}>
         <Navbar />
         {children}
         <Newsletter/>
