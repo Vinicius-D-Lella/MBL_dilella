@@ -1,4 +1,5 @@
 import FestivalCard from "../FestivalCard";
+import LojaSlider from "../LojaSlider";
 import NewsRoll from "../NewsRoll";
 import TimelineCard from "../TimelineCard";
 import "./index.css"
@@ -75,18 +76,134 @@ export default function HomeContainer(){
     <div className="Festival">
         <FestivalCard/>
     </div>
-    <div className="Iniciativa1"></div>
-    <div className="Iniciativa2"></div>
+    <div className="iniciativas">
+        <div className="iniciativas-header">
+            <div className="iniciativas-header-title">
+                <p>Iniciativas MBL</p>
+            </div>
+            <div className="iniciativas-header-description">
+                <p>Conheça nossos projetos para a refundação do Brasil através da transformação cultural, educacional e legislativa de todo Brasil</p>
+            </div>
+        </div>
+        <div className="iniciativas-card-top">
+            <div className="iniciativas-card" id="revista">
+                <div className="iniciativas-card-img">
+                    <div className="iniciativas-card-img-container">
+                        <img 
+                        width="585"
+                        height="573"
+                        src='https://framerusercontent.com/images/YaiCNcCvdxsrb6RFUcRsL59Cnk.webp?scale-down-to=512'></img>
+                    </div>
+                </div>
+                <div className="iniciativas-card-infos">
+                    <div className="iniciativas-card-infos-title">
+                        <p>Revista Valete</p>
+                    </div>
+                    <div className="iniciativas-card-infos-description">
+                        <p>Conteúdos dos mais diversos temas. De economia a filosofia, de política a história, de cultura a culinária, para ler e aprender no conforto da sua casa.</p>
+                    </div>
+                    <div className="iniciativas-card-infos-button">
+                        <a href="https://valete.org.br/?_gl=1*1rphh6m*_gcl_au*MTQzNTE2NzQ1LjE3NDk3NDM4MDc.#revista" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div className="iniciativas-card" id="valete+">
+                <div className="iniciativas-card-img">
+                    <div className="iniciativas-card-img-container">
+                        <img 
+                        width="370"
+                        height="790"
+                        src='https://framerusercontent.com/images/iyba8bci92GJ1GaO58ZFM7uZQDg.webp'></img>
+                    </div>
+                </div>
+                <div className="iniciativas-card-infos">
+                    <div className="iniciativas-card-infos-title">
+                        <p>Valete+</p>
+                    </div>
+                    <div className="iniciativas-card-infos-description">
+                        <p>Aplicativo que reúne conhecimento e cultura, com diversos conteúdos para você se aprofundar em temas relevantes e transformadores.</p>
+                    </div>
+                    <div className="iniciativas-card-infos-button">
+                        <a href="https://valete.org.br/?_gl=1*1rphh6m*_gcl_au*MTQzNTE2NzQ1LjE3NDk3NDM4MDc." target="_blank" rel="noopener noreferrer">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div className="iniciativas-card" id="livro">
+                <div className="iniciativas-card-img">
+                    <div className="iniciativas-card-img-container">
+                        <img src='https://framerusercontent.com/images/Dr7tI5QWAYS8ah6FIM2Bvn8VNg.webp?scale-down-to=1024'></img>
+                    </div>
+                </div>
+                <div className="iniciativas-card-infos">
+                    <div className="iniciativas-card-infos-title">
+                        <p>Clube do Livro</p>
+                    </div>
+                    <div className="iniciativas-card-infos-description">
+                        <p>Nossa comunidade de leitura que busca as conexões necessárias para resgatar a cultura, a literatura, a identidade e o imaginário brasileiro.</p>
+                    </div>
+                    <div className="iniciativas-card-infos-button">
+                        <a href="https://clube.valete.org.br/?_gl=1*1rphh6m*_gcl_au*MTQzNTE2NzQ1LjE3NDk3NDM4MDc." target="_blank" rel="noopener noreferrer">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div className="iniciativas-2">
+            <div className="iniciativas-card-bottom">
+                <div className="iniciativas-card" id="academia">
+                    <div className="iniciativas-card-img">
+                        <div className="iniciativas-card-img-container">
+                            <img src='https://framerusercontent.com/images/GxNFJESDhsTMLYqXoFEslSgFUs.webp'></img>
+                        </div>
+                    </div>
+                    <div className="iniciativas-card-infos">
+                        <div className="iniciativas-card-infos-title">
+                            <p>Academia MBL</p>
+                        </div>
+                        <div className="iniciativas-card-infos-description">
+                            <p>Queremos que você seja nosso político eleito, chefe de gabinete, um coordenador ou um intelectual.</p>
+                        </div>
+                        <div className="iniciativas-card-infos-button">
+                            <a href="https://academia.mbl.org.br/?_gl=1*1sc2xub*_gcl_au*MTQzNTE2NzQ1LjE3NDk3NDM4MDc." target="_blank" rel="noopener noreferrer">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>    
+                <div className="iniciativas-card-4" id="cursos">
+                    <div className="iniciativas-card-img">
+                        <div className="iniciativas-card-img-container">
+                            <img src='https://framerusercontent.com/images/EljRFH29ZtbfokMzuFiVmaYM8.png'></img>
+                        </div>
+                    </div>
+                    <div className="iniciativas-card-infos">
+                        <div className="iniciativas-card-infos-title">
+                            <p>Cursos</p>
+                        </div>
+                        <div className="iniciativas-card-infos-description">
+                            <p>Conheça nossos cursos elaborados para o seu desenvolvimento intelectual e profissional.</p>
+                        </div>
+                        <div className="iniciativas-card-infos-button">
+                            <a href="https://maquinadecortes.digital/">Máquina de Cortes</a>
+                            <a href="https://valete.org.br/filosofia?_gl=1*ei4uug*_gcl_au*MTQzNTE2NzQ1LjE3NDk3NDM4MDc.">Filosofia Política</a>
+                            <a href="https://valete.org.br/segredosdaescrita?_gl=1*ei4uug*_gcl_au*MTQzNTE2NzQ1LjE3NDk3NDM4MDc.">Segredos da Escrita</a>
+                            <a href="https://valete.org.br/historia?_gl=1*9grais*_gcl_au*MTQzNTE2NzQ1LjE3NDk3NDM4MDc.">História da Humanidade</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
     <div className="Porta-vozes"></div>
-    <div className="Noticias">
+    <div className="noticias">
         <div className="news-title-container">
             <h2 className="news-title">Últimas notícias sobre o movimento</h2>
         </div>
         <NewsRoll></NewsRoll>
     </div>
-    <div className="Timeline">
-        <h2 className="timeline-title">Timeline do Movimento Brasil Livre</h2>
-            <div className='timeline-cards'>
+    <div className="timeline">
+        <div className="timeline-title-container">
+            <h2 className="timeline-title">Timeline do Movimento Brasil Livre</h2>
+        </div>
+        <div className='timeline-cards'>
                     {
                         years.map((yearData, index) => (
                             <TimelineCard
@@ -104,12 +221,31 @@ export default function HomeContainer(){
                     }
             </div>
             <div className="timeline-button">
-                <a href="/mbl">
+                <div className="timeline-button-text">
+                    <a href="/mbl">
                     CONTINUA
                 </a>
+                </div>
+                <img className="timeline-button-image" src="down-chevron-svgrepo-com.svg"/>
+
+              
             </div>
     </div>
-    <div className="Loja-mbl"></div>
+    <div className="loja-mbl">
+        <div className="loja-mbl-title">
+            <div className="loja-mbl-title-container">
+                <p>Loja MBL</p>
+            </div>
+        </div>
+        <div className="loja-mbl-roll">
+            <LojaSlider/>
+        </div>
+        <div className="loja-mbl-button">
+            <div className="loja-mbl-button-container">
+                <a href="https://loja.mbl.org.br/" target="_blank" rel="noopener noreferrer">Ir para Loja MBL</a>
+            </div>
+        </div>
+    </div>
     
   </div>)
 }

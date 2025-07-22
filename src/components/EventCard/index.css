@@ -113,7 +113,8 @@
             text-decoration: none;
 
             &:hover{
-            background-color:#eb894f;
+                transition: 0.3s;
+                background-color:#eb894f;
             }
         }
 

@@ -4,13 +4,13 @@ import "./index.css";
 export interface PVcardInterface{
     name: string;
     desc: string;
-    votos?: string;
     seguidores: string;
+    src: string;
+    tags: Array<string>;
     instagram?: string;
     youtube?: string;
     x?: string;
-    src: string;
-    tags: Array<string>;
+    votos?: string;
 }
 
 export default function PVcard(props: PVcardInterface) {
