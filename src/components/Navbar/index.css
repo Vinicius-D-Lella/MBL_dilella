@@ -4,12 +4,15 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 80px;
+    height: 70px;
     justify-content: space-around;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
     background-color: #f9f9f9;
+    width: 100vw;
+    flex: none;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 
 
     .navbar {
@@ -44,7 +47,7 @@ header {
     .nav-items {
         display: flex;
         background-color: transparent;
-        gap: 15px;
+        gap: 25px;
         align-items: center;
         list-style: none;
         font-size: 25px;

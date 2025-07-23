@@ -1,8 +1,5 @@
 "use client"
 
-
-import Link from "next/link";
-import Image from "next/image";
 import NavItem, {NavItemInterface} from "../NavItem";
 import "./index.css";
 import { usePathname } from "next/navigation";
@@ -14,7 +11,7 @@ export default function Navbar() {
         { url: "/valete", label: "Valete +" },
         { url: "/clube-livro", label: "Clube do Livro" },
         { url: "https://festival.mbl.org.br/", label: "Festival" },
-        { url: "/porta-vozes", label: "Nossos Porta-Vozes" },
+        { url: "/porta-vozes", label: "Porta-Vozes" },
         { url: "/eventos", label: "Eventos" },
         { url: "/noticias", label: "Notícias" },
         { url: "https://elite.mbl.org.br/", label: "Elite" },
@@ -26,15 +23,15 @@ export default function Navbar() {
     return (
         <header>
             <nav className="navbar">
-                <Link
+                <a
                 href="/">
-                    <Image 
+                    <img 
                     alt="logo do header" 
                     src="logo_mbl.svg"
                     className="logo_header"
                     width={74} 
                     height={28}/> 
-                </Link>
+                </a>
                 <div className="nav-right">
                 <ul className="nav-items">
                    { items.map((item, index) => (
