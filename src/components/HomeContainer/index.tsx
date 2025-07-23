@@ -1,7 +1,10 @@
+import { YouTubeEmbed } from "@next/third-parties/google";
 import FestivalCard from "../FestivalCard";
 import LojaSlider from "../LojaSlider";
 import NewsRoll from "../NewsRoll";
+import PVslider from "../PVslider";
 import TimelineCard from "../TimelineCard";
+import YoutubePlayer from "../YoutubePlayer";
 import "./index.css"
 
 const years = [
@@ -64,13 +67,7 @@ export default function HomeContainer(){
             </div>
         </div>
         <div className="header-video">
-<iframe
-  id="inlineFrameExample"
-  title="Inline Frame Example"
-  width="300"
-  height="200"
-  src="https://www.youtube.com/watch?v=rzIUfd3tdG0">
-</iframe>
+                <YouTubeEmbed videoid="qgGt4pkbNtk" height={210} width={380} />
         </div>
     </div>
     <div className="Festival">
@@ -192,7 +189,17 @@ export default function HomeContainer(){
                 </div>
         </div>
     </div>
-    <div className="Porta-vozes"></div>
+    <div className="porta-vozes">
+        <div className="pv-title">
+            <p>Nossos Porta-vozes</p>
+        </div>
+        <PVslider/>
+        <div className="pv-button-container">
+            <div className="pv-button">
+                <a href="/porta-vozes">Conheça todos porta-vozes</a>
+            </div>
+        </div>
+    </div>
     <div className="noticias">
         <div className="news-title-container">
             <h2 className="news-title">Últimas notícias sobre o movimento</h2>
