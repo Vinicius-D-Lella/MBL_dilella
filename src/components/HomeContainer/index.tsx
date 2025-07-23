@@ -4,7 +4,6 @@ import LojaSlider from "../LojaSlider";
 import NewsRoll from "../NewsRoll";
 import PVslider from "../PVslider";
 import TimelineCard from "../TimelineCard";
-import YoutubePlayer from "../YoutubePlayer";
 import "./index.css"
 
 const years = [
