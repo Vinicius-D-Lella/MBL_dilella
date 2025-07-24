@@ -24,7 +24,7 @@ export default function Navbar() {
         <header>
             <nav className="navbar">
                 <a
-                href="/MBL_dilella/">
+                href="/MBL_dilella">
                     <img 
                     alt="logo do header" 
                     src="logo_mbl.svg"
