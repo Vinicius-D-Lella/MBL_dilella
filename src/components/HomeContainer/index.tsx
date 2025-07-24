@@ -195,7 +195,7 @@ export default function HomeContainer(){
         <PVslider/>
         <div className="pv-button-container">
             <div className="pv-button">
-                <a href="MBL_dilella/porta-vozes">Conheça todos porta-vozes</a>
+                <a href="/MBL_dilella/porta-vozes">Conheça todos porta-vozes</a>
             </div>
         </div>
     </div>
@@ -228,7 +228,7 @@ export default function HomeContainer(){
             </div>
             <div className="timeline-button">
                 <div className="timeline-button-text">
-                    <a href="MBL_dilella/mbl">
+                    <a href="/MBL_dilella/mbl">
                     CONTINUA
                 </a>
                 </div>

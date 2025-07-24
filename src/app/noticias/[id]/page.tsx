@@ -81,7 +81,7 @@ text: [
 ],
   fonte:{
     name:"Jovem Pan",
-    link:"https://jovempan.com.br/noticias/brasil/alesp-aprova-projeto-de-educacao-financeira-nas-escolas-de-sao-paulo.html"
+    link:"https://jovempan.com.br/MBL_dilella/noticias/brasil/alesp-aprova-projeto-de-educacao-financeira-nas-escolas-de-sao-paulo.html"
   }
 
   }
@@ -139,7 +139,7 @@ export default async function NewsPage({
                         title={item.title}
                         subtitle={item.desc}
                         img={item.img}
-                        url={`/MBL_dilella/noticias/${item.id}`}
+                        url={`/MBL_dilella/noticiascias/${item.id}`}
                     />
                             ))
                             
