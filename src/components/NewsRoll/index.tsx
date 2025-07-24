@@ -34,7 +34,7 @@ export default function NewsRoll() {
                         title={item.title}
                         subtitle={item.subtitle}
                         img={item.img}
-                        url={`/noticias/${item.alt}`}
+                        url={`MBL_dilella/noticias/${item.alt}`}
                     />
                 ))
             }

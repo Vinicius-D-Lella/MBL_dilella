@@ -1,6 +1,7 @@
-"use client"
+export async function generateStaticParams() {
+  return [{ id: 'o-que-e-o-projeto-anti-oruam-protocolado-por-vereadora-de-sao-paulo' }, { id: 'kataguiri-propoe-pena-25-anos-estupro-vulneravel' }, { id: 'alesp-aprova-projeto-de-educacao-financeira-nas-escolas-de-sao-paulo' }]
+}
 
-import { useParams } from 'next/navigation'
 import './index.css'
 import NewsCard from '@/components/NewsCard'
 
@@ -86,12 +87,16 @@ text: [
   }
 ]
  
-export default function NewsPage() {
-  const params = useParams<{ id: string }>()
+export default async function NewsPage({
+  params,
+}: {
+  params: Promise<{id:string}>;
+}) {
+  const {id} = await params;
   return (
     <div className='news-page'>
         {news
-          .filter(item => item.id === params.id)
+          .filter(item => item.id === id)
           .map(item => (
             <div className="news-container" key={item.id}>
               <div className='news-title-container'>
@@ -126,7 +131,7 @@ export default function NewsPage() {
                 </div>
                 <div className='news-roll-cards'>
                   {
-                    news.filter(item => item.id != params.id)
+                    news.filter(item => item.id != id)
           .map((item,index) => (
                     <NewsCard
                         key={index}
@@ -134,7 +139,7 @@ export default function NewsPage() {
                         title={item.title}
                         subtitle={item.desc}
                         img={item.img}
-                        url={`/noticias/${item.id}`}
+                        url={`/MBL_dilella/noticias/${item.id}`}
                     />
                             ))
                             
