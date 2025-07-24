@@ -1,6 +1,6 @@
 .timeline-row{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: min-content;
     align-items: center;
     justify-content: center;

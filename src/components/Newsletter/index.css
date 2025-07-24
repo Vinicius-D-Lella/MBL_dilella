@@ -33,6 +33,11 @@
             width: 100%;
             padding: 20px 0;
             background-color: transparent;
+            
+
+            img{
+                fill: #eb894f;
+            }
 
             h2{
                 color: black;
@@ -68,7 +73,7 @@
             }
 
             input {
-                background-color: transparent;
+                background-color: red;
                 width: 100%;
                 padding: 12px;
                 background-color: #f2f2f2;
@@ -76,6 +81,7 @@
                 border-radius: 5px;
                 border: 0;
             }
+
         }
         .newsletter-checkbox {
             background-color: transparent;

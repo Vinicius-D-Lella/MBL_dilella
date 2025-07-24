@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import "./index.css";
 
 export default function Footer() {
@@ -9,59 +7,59 @@ export default function Footer() {
         <footer>
             <div className="footerbar">
             <div className="footer-left">
-            <Link
+            <a
                 href="/">
-                    <Image
+                    <img
                     alt="home" 
                     src="logo_mbl.svg" 
                     className="logo_footer"
                     width={74} 
                     height={28}/> 
-                </Link>
+                </a>
             <p className="direitos">© MBL {currentYear} | Todos os direitos reservados.</p>
             </div>
             <div className="footer-right">
-            <Link
+            <a
                 href="https://www.youtube.com/@MBLiveTV">
-                    <Image
+                    <img
                     alt="youtube" 
                     src="icons8-youtube.svg" 
                     width={20} 
                     height={20}/> 
-                </Link>
+                </a>
 
-                        <Link
+                        <a
                 href="https://www.instagram.com/mblivre/">
-                    <Image
+                    <img
                     alt="instagram" 
                     src="icons8-instagram.svg" 
                     width={20} 
                     height={20}/> 
-                </Link>
-                            <Link
+                </a>
+                            <a
                 href="https://x.com/MBLivre">
-                    <Image
+                    <img
                     alt="X" 
                     src="icons8-x.svg" 
                     width={20} 
                     height={20}/> 
-                </Link>
-                            <Link
+                </a>
+                            <a
                 href="https://www.facebook.com/mblivre">
-                    <Image
+                    <img
                     alt="facebook" 
                     src="icons8-facebook.svg" 
                     width={20} 
                     height={20}/> 
-                </Link>
-                            <Link
+                </a>
+                            <a
                 href="https://www.tiktok.com/@mblivre">
-                    <Image
+                    <img
                     alt="tiktok" 
                     src="icons8-tiktok.svg" 
                     width={20} 
                     height={20}/> 
-                </Link>
+                </a>
                 </div>
                 </div>
             </footer>

@@ -70,6 +70,7 @@ const eventos = [
 
 export default function Eventos() {
   return (
+    <div className='eventos-page'>
         <div className="eventos-container">
           <div className='title-container'>
             <h1>Eventos</h1>
@@ -89,6 +90,7 @@ export default function Eventos() {
               nomeLocal={evento.nomeLocal}/>
           ))
             }
+        </div>
         </div>
     );
 }

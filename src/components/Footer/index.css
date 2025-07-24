@@ -1,4 +1,8 @@
 
+    *{
+        background-color: transparent;
+    }
+
     .footerbar {
         padding-top: 50px;
         display: flex;
@@ -6,22 +10,22 @@
         align-items: center;
         position: sticky;
         bottom: 0;
-        width: 100vw;
+        width: 100%;
         padding: 20px 3% 10px 3%;
         background-color: #eeeeee;
         color: gray;
 
         .footer-left {
-                background-color: transparent;
+        
             display: flex;
             flex-direction: column;
             align-items: center;
 
             a{
-                background-color: transparent;
+        
             }
             .logo_footer {
-                background-color: transparent;
+        
             }
         }
         .footer-right {
@@ -33,15 +37,15 @@
             gap: 15px;
 
             a{
-                background-color: transparent;
+        
                 
                 img{
-                    background-color: transparent;
+            
                 }
             }
         }    
         .direitos{
-                background-color: transparent;
+        
             font-size: 10px;
             font-weight: 400;
         }

@@ -3,7 +3,7 @@ li{
 }
 
 .slider-container{
-    width: 100vw;
+    width: 100%;
     .slider{
         max-width: 100%;
         overflow: hidden;

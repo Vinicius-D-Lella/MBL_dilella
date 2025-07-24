@@ -10,3 +10,8 @@
     position: relative;
     width: 700px;
 }
+
+.eventos-page{
+    display: flex;
+    justify-content: center;
+}
