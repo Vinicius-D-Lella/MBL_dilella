@@ -2,7 +2,6 @@ export async function generateStaticParams() {
   return [{ id: 'o-que-e-o-projeto-anti-oruam-protocolado-por-vereadora-de-sao-paulo' }, { id: 'kataguiri-propoe-pena-25-anos-estupro-vulneravel' }, { id: 'alesp-aprova-projeto-de-educacao-financeira-nas-escolas-de-sao-paulo' }]
 }
 
-import './index.css'
 import NewsCard from '@/components/NewsCard'
 
 let news = [
@@ -94,42 +93,42 @@ export default async function NewsPage({
 }) {
   const {id} = await params;
   return (
-    <div className='news-page'>
+    <div className='pt-8 flex justify-center items-center flex-col gap-7.5'>
         {news
           .filter(item => item.id === id)
           .map(item => (
-            <div className="news-container" key={item.id}>
-              <div className='news-title-container'>
+            <div className="flex flex-col items-center gap-10 w-225" key={item.id}>
+              <div className='flex w-175 flex-col justify-center items-center'>
                 <div>
-                  <h1>{item.title}</h1>
+                  <h1 className='text-center w-150 text-[40px] font-semibold text-base/10'>{item.title}</h1>
                 </div>
                 <div>
-                  <p>{item.date}</p>
+                  <p className='w-min whitespace-nowrap text-[#999] text-[18px]'>{item.date}</p>
                 </div>
               </div>
-              <div className='news-image-container'>
-                <img src={item.img} alt={item.title} style={{ maxWidth: '100%' }} />
+              <div className='w-225 h-112.5 rounded-[20px]'>
+                <img src={item.img} alt={item.title} className='w-full h-full object-center object-cover rounded-[inherit]'/>
               </div>
-              <div className='news-text-container'>
+              <div className='w-175'>
                 {item.text.map((paragraph, idx) => (
-                  <p key={idx}>{paragraph}</p>
+                  <p className='pt-2.5 pb-2.5 text-[#666] text-[18px]/[1.2em]' key={idx}>{paragraph}</p>
                 ))}
-                <div className='news-source-container'>
-                  <p>Fonte: </p>
-                  <a href={item.fonte.link} target="_blank" rel="noopener noreferrer"> {item.fonte.name}</a>
+                <div className='flex flex-row gap-1.25'>
+                  <p className='text-black p-0 text-[12px] font-semibold'>Fonte: </p>
+                  <a className='text-black no-underline hover:underline hover:text-[#0088ff] text-[12px] font-semibold' href={item.fonte.link} target="_blank" rel="noopener noreferrer"> {item.fonte.name}</a>
                 </div>
               </div>
             </div>
           ))
         }
-              <div className='news-barrier'/>
-              <div className='news-roll'>
-                <div className='news-roll-title'>
-                  <h1>
+              <div className='bg-[#5cbcae] h-px w-[75%]'/>
+              <div className='w-250 flex flex-col items-start gap-7.5'>
+                <div className='w-full flex flex-col items-start gap-7.5'>
+                  <h1 className='text-center text-[40px] font-semibold'>
                      Leia também 
                   </h1>
                 </div>
-                <div className='news-roll-cards'>
+                <div className='flex flex-row gap-5 w-full'>
                   {
                     news.filter(item => item.id != id)
           .map((item,index) => (
