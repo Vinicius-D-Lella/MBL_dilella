@@ -1,5 +1,3 @@
-import './index.css';
-
 export interface EventCardInterface{
     title: string;
     date: string;
@@ -15,41 +13,41 @@ export interface EventCardInterface{
 
 export default function EventCard(props: EventCardInterface) {
     return (
-        <div className="event-card">
-            <div className="event-card-header">
-                <div className="event-card-title">
-                <h4>{props.title}</h4>
+        <div className="place-content-center items-center flex gap-y-7.5 relative w-full flex-col">
+            <div className="items-start flex flex-col gap-0 h-min overflow-hidden p-0 relative w-full">
+                <div className="outline-none flex flex-col justify-start transform-none">
+                <h4 className='text-[22px]/[1.4em] font-semibold text-black text-start tracking-[-0.04em]'>{props.title}</h4>
                 </div>
-                <div className="event-card-subtitle">
-                <p className='date'>{props.date}</p>                       
+                <div>
+                <p className='font-normal text-[18px] text-[#888] text-start'>{props.date}</p>                       
                 </div>
             </div>
-            <div className="event-card-infos">
-                <div className="event-card-banner">
-                    <div className="event-card-image-container">
-                        <img src={props.img} alt={props.title}></img>
+            <div className="flex w-full items-center flex-row justify-between">
+                <div className="h-31.25 max-w-full relative w-62.5 rounded-[12px]">
+                    <div className="rounded-[12px] w-full h-full">
+                        <img className='w-full h-full rounded-[12px] object-cover' src={props.img} alt={props.title}></img>
                     </div>
                 </div>
-                <div className="event-card-info">
-                    <div className="event-card-info-container">
+                <div className="flex flex-row">
+                    <div className="text-[#666] text-[18px]">
                         <p className='local'>
-                            {props.nomeLocal && <strong>{props.nomeLocal}</strong>}
+                            {props.nomeLocal && <strong className='font-extrabold'>{props.nomeLocal}</strong>}
                             {props.nomeLocal && <br/>}
                             {props.rua}<br/>
                             {props.regiao}<br/>
                             {props.cep}
 
                         </p>
-                        <p className='hour'><strong>Horário:</strong> {props.horario}</p>
+                        <p className='mt-20px'><strong>Horário:</strong> {props.horario}</p>
                     </div>
                 </div>
-                <div className="event-card-button">
-                    <a href={props.link} target="_blank" rel="noopener noreferrer">
+                <div>
+                    <a className='pt-1 pb-1 pr-7.5 pl-7.5 bg-[#5cbcaa] hover:bg-[#eb894f] rounded-[6px] text-[18px] font-semibold text-white transition-[0.3s] text-deco no-underline tracking-[-0.03em]' href={props.link} target="_blank" rel="noopener noreferrer">
                         Quero ir!
                     </a>
                 </div>
             </div>
-            <div className="event-card-bar"/>
+            <div className="items-center bg-[#dddddd] flex-row gap-2.5 h-0.5 overflow-hidden p-0 relative w-[75%]"/>
         </div>
     )
 }

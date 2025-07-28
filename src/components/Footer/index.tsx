@@ -1,31 +1,26 @@
-import "./index.css";
-
 export default function Footer() {
     const currentYear = new Date().getFullYear();
     return (
 
         <footer>
-            <div className="footerbar">
-            <div className="footer-left">
-            <a
+            <div className="flex justify-around items-center sticky bottom-0 w-full pt-4 pb-2.5 pr-[3%] pl-[3%] bg-[#eee] text-[gray]">
+            <div className="flex flex-col items-center gap-3">
+            <a className=""
                 href="/">
                     <img
                     alt="home" 
                     src="logo_mbl.svg" 
-                    className="logo_footer"
-                    width={74} 
-                    height={28}/> 
+                    className="w-18.5 h-7"/> 
                 </a>
-            <p className="direitos">© MBL {currentYear} | Todos os direitos reservados.</p>
+            <p className=" font-normal text-[12px]">© MBL {currentYear} | Todos os direitos reservados.</p>
             </div>
-            <div className="footer-right">
+            <div className="bg-transparent flex flex-row justify-between items-center gap-3.75 ">
             <a
                 href="https://www.youtube.com/@MBLiveTV">
                     <img
                     alt="youtube" 
-                    src="icons8-youtube.svg" 
-                    width={20} 
-                    height={20}/> 
+                    src="icons8-youtube.svg"
+                    className="w-5 h-5"/> 
                 </a>
 
                         <a
@@ -33,32 +28,28 @@ export default function Footer() {
                     <img
                     alt="instagram" 
                     src="icons8-instagram.svg" 
-                    width={20} 
-                    height={20}/> 
+                    className="w-5 h-5"/> 
                 </a>
                             <a
                 href="https://x.com/MBLivre">
                     <img
                     alt="X" 
                     src="icons8-x.svg" 
-                    width={20} 
-                    height={20}/> 
+                    className="w-5 h-5"/> 
                 </a>
                             <a
                 href="https://www.facebook.com/mblivre">
                     <img
                     alt="facebook" 
                     src="icons8-facebook.svg" 
-                    width={20} 
-                    height={20}/> 
+                    className="w-5 h-5"/> 
                 </a>
                             <a
                 href="https://www.tiktok.com/@mblivre">
                     <img
                     alt="tiktok" 
                     src="icons8-tiktok.svg" 
-                    width={20} 
-                    height={20}/> 
+                    className="w-5 h-5"/> 
                 </a>
                 </div>
                 </div>

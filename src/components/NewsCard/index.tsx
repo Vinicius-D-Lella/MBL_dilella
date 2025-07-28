@@ -32,7 +32,7 @@ export default function NewsCard(props: NewsCardInterface) {
         <div className="flex flex-col p-7.5 gap-2.5">
             <h3 className='text-[22px]/6 font font-semibold pb-[10px]'>{props.title}</h3>
             <p className='text-[18px]/6 text-[#666] font-normal pb-[10px]'>{props.subtitle}</p>
-            <div className="mt-auto bg-[#5cbcae] rounded-[10px] flex justify-center items-center gap-2.5 pt-2.5 pb-2.5 pr-3.75 pl-3.75 w-min whitespace-nowrap shadow-2xs">
+            <div className="mt-auto bg-[#5cbcae] rounded-[10px] flex justify-center items-center gap-2.5 pt-2 pb-2 pr-3.75 pl-3.75 w-min whitespace-nowrap shadow-md shadow-gray-500">
                 <a className='flex text-[16px] bg-transparent text-white font-semibold'>
                     Leia mais
                 </a>
