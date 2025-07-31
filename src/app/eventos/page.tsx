@@ -1,4 +1,5 @@
 import EventCard from '@/components/EventCard';
+import Newsletter from '@/components/Newsletter';
 
 const eventos = [
   {
@@ -90,6 +91,7 @@ export default function Eventos() {
           ))
             }
         </div>
+        <Newsletter/>
         </div>
     );
 }

@@ -1,3 +1,5 @@
+import Newsletter from "@/components/Newsletter";
+
 export default function ClubeLivro() {
     return (
         <div className="flex flex-col items-center pt-12.5">
@@ -37,6 +39,7 @@ export default function ClubeLivro() {
                     </div>
                 </div>
             </div>
+            <Newsletter/>
         </div>
     );
 }

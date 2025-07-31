@@ -3,6 +3,7 @@ export async function generateStaticParams() {
 }
 
 import NewsCard from '@/components/NewsCard'
+import AltNewsletter from '@/components/Newsletter/altnewsletter';
 
 let news = [
   {
@@ -145,8 +146,7 @@ export default async function NewsPage({
                   }
                 </div>
               </div>
-
-
+          <AltNewsletter/>
     </div>
   )
 }

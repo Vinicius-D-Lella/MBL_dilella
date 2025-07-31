@@ -1,3 +1,4 @@
+import Newsletter from "@/components/Newsletter";
 import PVlist from "@/components/PVlist";
 
 
@@ -14,6 +15,7 @@ export default function PortaVozes() {
                 <PVlist />
 
     </div>
+    <Newsletter/>
     </div>
     );
 }

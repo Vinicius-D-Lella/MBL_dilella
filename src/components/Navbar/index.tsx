@@ -1,5 +1,4 @@
 "use client"
-
 import NavItem, {NavItemInterface} from "../NavItem";
 import { usePathname } from "next/navigation";
 

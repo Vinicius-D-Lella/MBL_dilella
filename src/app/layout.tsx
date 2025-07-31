@@ -26,7 +26,6 @@ return (
       <body id="body" className={afacad.className}>
         <Navbar />
         {children}
-        <Newsletter/>
         <Footer/>
       </body>
     </html>

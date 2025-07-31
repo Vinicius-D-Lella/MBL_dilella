@@ -4,6 +4,7 @@ import LojaSlider from "../LojaSlider";
 import NewsRoll from "../NewsRoll";
 import PVslider from "../PVslider";
 import TimelineCard from "../TimelineCard";
+import Newsletter from "../Newsletter";
 
 const years = [
     { 
@@ -233,7 +234,7 @@ export default function HomeContainer(){
             </div>
             <div className="bg-black right-[43%] bottom-[-25px] p-[10px_20px] rounded-[10px] h-12 w-auto absolute flex flex-row content-center items-center">
                 <div className="h-min">
-                    <a className="text-[22px] font-bold no-underline text-white" href="/MBL_dilella/mbl">
+                    <a className="text-[22px] font-bold no-underline text-white" href="/MBL_dilella/mbl#historia">
                     CONTINUA
                 </a>
                 </div>
@@ -257,6 +258,6 @@ export default function HomeContainer(){
             </div>
         </div>
     </div>
-    
+    <Newsletter/>
   </div>)
 }

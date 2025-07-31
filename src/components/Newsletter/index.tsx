@@ -32,7 +32,7 @@ export default function Newsletter() {
                     </div>
                     <p className="text-[#999] text-[12px] font-medium">Concordo em receber a newsletter do MBL e parceiros. Podendo cancelar a  qualquer momento. Confira a nossa Política de Privacidade.</p>
                 </label>
-                <div className="rounded-[6px] pt-2 pb-2 pr-5.5 pl-5.5 cursor-pointer bg-[#5cbcae] border-none text-[#f7f5ff] font-[inherit] font-medium w-full flex justify-center hover:bg-[#924953]">
+                <div className="rounded-[6px] pt-2 pb-2 pr-5.5 pl-5.5 cursor-pointer bg-[#5cbcae] border-none text-[#f7f5ff] font-[inherit] font-medium w-full flex justify-center hover:bg-[#924953]  hover:transition-[0.3s]">
                     <button className="w-full h-full border-none text-inherit cursor-pointer">Assine gratuitamente agora</button>
                 </div>
             </div>

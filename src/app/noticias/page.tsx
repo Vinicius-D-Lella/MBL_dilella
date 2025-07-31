@@ -1,3 +1,4 @@
+import Newsletter from "@/components/Newsletter";
 import NewsRoll from "@/components/NewsRoll";
 
 export default function noticias() {
@@ -8,7 +9,8 @@ export default function noticias() {
             <div className="flex flex-col gap-4">
                 <NewsRoll />  
             </div>
-
+        <Newsletter/>
     </div>
+    
     );
 }

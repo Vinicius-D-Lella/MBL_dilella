@@ -1,3 +1,4 @@
+import Newsletter from "@/components/Newsletter";
 import TimelineCard from "@/components/TimelineCard";
 
 const years = [
@@ -164,7 +165,7 @@ export default function mbl() {
         </div>
             <div className="flex items-center flex-col justify-center">
                 <h2 className="text-[#001122] text-[36px] font-bold tracking-[-0.4px] text-left">Timeline do Movimento Brasil Livre</h2>
-                <div className="pt-12.5">
+                <section id="historia" className="pt-12.5">
                             {
                                 years.map((yearData, index) => (
                                     <TimelineCard
@@ -179,8 +180,9 @@ export default function mbl() {
                                     />
                                 ))
                             }
-                </div>             
+                </section>             
             </div>
+            <Newsletter/>
     </div>
     );
 }

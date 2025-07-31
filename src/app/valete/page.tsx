@@ -1,3 +1,5 @@
+import Newsletter from "@/components/Newsletter";
+
 export default function valete() {
     return (
     <div className="flex justify-center items-center flex-col w-full h-full bg-[#f9f9f9]">
@@ -47,6 +49,7 @@ export default function valete() {
                 </div>
             </div>
         </div>
+        <Newsletter/>
     </div>
     );
 }
