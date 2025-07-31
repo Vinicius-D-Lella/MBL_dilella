@@ -1,5 +1,4 @@
 import NewsCard from "../NewsCard";
-import './index.css';
 
 let noticias = [
     {
@@ -25,7 +24,7 @@ let noticias = [
 export default function NewsRoll() {
     return (
         <div>
-            <div className="news-roll">
+            <div className="flex flex-row gap-4">
             {
                 noticias.map((item,index) => (
                     <NewsCard

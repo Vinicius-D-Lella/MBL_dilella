@@ -1,5 +1,4 @@
 import EventCard from '@/components/EventCard';
-import './index.css';
 
 const eventos = [
   {
@@ -70,10 +69,10 @@ const eventos = [
 
 export default function Eventos() {
   return (
-    <div className='eventos-page'>
-        <div className="eventos-container">
+    <div className='flex justify-center'>
+        <div className="items-start justify-center flex gap-15 h-min max-w-full p-2.5 relative w-[700px] flex-col pt-12.5">
           <div className='title-container'>
-            <h1>Eventos</h1>
+            <h1 className='text-[40px] font-semibold'>Eventos</h1>
           </div>
             {
             eventos.map((evento,index) => ( 

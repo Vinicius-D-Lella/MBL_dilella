@@ -16,7 +16,7 @@ export default function EventCard(props: EventCardInterface) {
         <div className="place-content-center items-center flex gap-y-7.5 relative w-full flex-col">
             <div className="items-start flex flex-col gap-0 h-min overflow-hidden p-0 relative w-full">
                 <div className="outline-none flex flex-col justify-start transform-none">
-                <h4 className='text-[22px]/[1.4em] font-semibold text-black text-start tracking-[-0.04em]'>{props.title}</h4>
+                <h4 className='text-[28px]/[1.4em] font-bold text-black text-start tracking-[-0.04em]'>{props.title}</h4>
                 </div>
                 <div>
                 <p className='font-normal text-[18px] text-[#888] text-start'>{props.date}</p>                       

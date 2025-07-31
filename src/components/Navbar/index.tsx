@@ -26,7 +26,7 @@ export default function Navbar() {
                 href="/MBL_dilella">
                     <img 
                     alt="logo do header" 
-                    src="logo_mbl.svg"
+                    src="/logo_mbl.svg"
                     className="w-18.5 h-7"
                     /> 
                 </a>

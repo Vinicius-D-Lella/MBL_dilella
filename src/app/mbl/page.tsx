@@ -1,4 +1,3 @@
-import "./index.css";
 import TimelineCard from "@/components/TimelineCard";
 
 const years = [
@@ -107,55 +106,55 @@ const years = [
 
 export default function mbl() {
     return (
-    <div className="mbl-page">
+    <div className="flex flex-col items-center justify-center">
 
-        <div className="mbl-header">
-            <div className="mbl-header-image">
-                <div className="mbl-header-h1">
-                    <h1>MBL</h1>
+        <div className="flex flex-row items-center justify-center">
+            <div>
+                <div className="absolute pt-22.5 pl-12.5">
+                    <h1 className="absolute text-white text-[90px] font-bold">MBL</h1>
                 </div>
                 <div className="mbl-header-image-content">
                     <img src="https://framerusercontent.com/images/nvW0f3GvV8hPHn7bHKo8EpAXA.webp?scale-down-to=1024" alt="Imagem do Movimento Brasil Livre" />
                 </div>
             </div>
         </div>
-        <div className="mbl-content">
-            <p>
+        <div className="flex gap-5 flex-col w-225 p-[40px_20px_20px_20px]">
+            <p className="text-[18px]">
                 O Movimento Brasil Livre rapidamente se tornou um dos grupos de militância política mais relevantes do país e, em nossa trajetória de mais de uma década, expandimos nossa missão geracional para um partido político, escolas de formação intelectual, uma revista física e um aplicativo que reúne a elite do pensamento brasileiro, criando nossa própria tecnologia para promover conexões e transformações dentro da nossa comunidade.
             </p>
-            <p>
+            <p className="text-[18px]">
                 Enquanto movimento, somos uma organização independente que reúne milhares de membros em todos os estados da federação, com o propósito de tirar o país do atoleiro, formando, forjando e renovando os quadros que devem assumir posições de liderança na política local e nacional, deixando um legado extraordinário para a história do Brasil.
             </p>
-            <p>
+            <p className="text-[18px]">
               Atualmente, contamos com mais de dez parlamentares que exercem seus mandatos com excelência e impactam efetivamente a vida das pessoas em suas cidades, estados e em todo o país. Em breve, eles serão os rostos orgulhosos do partido Missão.   
             </p>   
-            <p>
+            <p className="text-[18px]">
                No campo cultural, produzimos programas diários que dialogam ao vivo com dezenas de milhares de pessoas e alcançam mais de dois milhões de espectadores todos os meses. 
             </p>   
-            <p>
+            <p className="text-[18px]">
                 Nossa revista impressa já soma dezenas de milhares de exemplares, sendo folheada mensalmente pela nova elite intelectual que estamos formando.
             </p>   
-            <p>
+            <p className="text-[18px]">
                Com uma visão ousada e compromisso inabalável, seguimos transformando a política e a cultura do Brasil. O futuro já começou, e você pode fazer parte dessa mudança. 
             </p>   
         </div>
 
-        <div className="mbl-bar">
-            <div className="mbl-bar-image">
-                <img src="https://framerusercontent.com/images/tzpF0RVLIyYeN8sUQkAd6uR2lQ.png" alt="dedo apontado pra você" />
+        <div className="flex flex-col mb-25 gap-5 items-center">
+            <div className="absolute w-[285px] left-[calc(31.6667%-142.5px)]">
+                <img className="w-full" src="https://framerusercontent.com/images/tzpF0RVLIyYeN8sUQkAd6uR2lQ.png" alt="dedo apontado pra você" />
             </div>
-            <div className="mbl-bar-blank">
+            <div className="h-25">
             </div>
-            <div className="mbl-bar-cyan">
-                <div className="mbl-bar-cyan-content">
-                    <div className="mbl-bar-cyan-left">
+            <div className="bg-[#5cbcae] w-dvw h-min flex items-center justify-center">
+                <div className="flex flex-row items-center justify-center w-225">
+                    <div className="w-112.5">
                     </div>
-                    <div className="mbl-bar-cyan-right">
-                        <div className="mbl-bar-cyan-right-text">
-                            <p>O MBL quer contratar você! <br/> Entre na Academia MBL</p>
+                    <div className="gap-5 p-[25px_15px]">
+                        <div>
+                            <p className="text-[22px] font-semibold">O MBL quer contratar você! <br/> Entre na Academia MBL</p>
                         </div>
-                        <div className="academia-button">
-                            <a href="https://academia.mbl.org.br/" target="_blank" rel="noopener noreferrer">
+                        <div className="hover:bg-[#333] mt-2.5 bg-black text-white border-0 p-[15px_20px] rounded-[8px] cursor-pointer">
+                            <a className="text-white font-semibold" href="https://academia.mbl.org.br/" target="_blank" rel="noopener noreferrer">
                             Inscreva-se para a próxima turma!
                             </a>
                         </div>
@@ -163,9 +162,9 @@ export default function mbl() {
                 </div>
             </div>    
         </div>
-            <div className="timeline-rool">
-                <h2 className="mbl-title">Timeline do Movimento Brasil Livre</h2>
-                <div className="timeline-cards">
+            <div className="flex items-center flex-col justify-center">
+                <h2 className="text-[#001122] text-[36px] font-bold tracking-[-0.4px] text-left">Timeline do Movimento Brasil Livre</h2>
+                <div className="pt-12.5">
                             {
                                 years.map((yearData, index) => (
                                     <TimelineCard

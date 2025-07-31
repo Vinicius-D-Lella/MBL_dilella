@@ -1,5 +1,3 @@
-import "./index.css" 
-
 const portaVozes = [
     {
         name: "Amanda Vettorazzo",
@@ -84,26 +82,26 @@ const portaVozes = [
 
 export default function PVslider(){
     return(
-        <div className="pv-slider-container">
-        <div className="pv-slider">
-            <ul className='slider-list'>
+        <div className="w-250">
+        <div className="max-w-full overflow-hidden m-[0_auto]">
+            <ul className='flex flex-row gap-5 animate-slow-slider '>
                 {portaVozes.map((portaVoz, index) => (
-                <li className='pv-slider-cards' key={index}>
-                    <div className="pv-card">
-                        <div className="pv-card-container">
-                            <div className="pv-card-image">
-                                <img src={portaVoz.src} alt={portaVoz.name}/>
+                <li className='flex justify-center items-center' key={index}>
+                    <div className="flex aspect-[.7272727272727273_/_1] h-[351px] overflow-visible relative no-underline w-[255px]">
+                        <div className="flex gap-2.5 items-center flex-col">
+                            <div className="w-[210px] h-[300px]">
+                                <img className="w-full h-full" src={portaVoz.src} alt={portaVoz.name}/>
                             </div>
-                            <div className="pv-card-name">
-                                <p>{portaVoz.name}</p>
+                            <div className="text-[24px] font-bold">
+                                <p className="text-[#924953] font-bold">{portaVoz.name}</p>
                             </div>
-                            <div className="pv-card-info">
-                                <div className="pv-card-seguidores-card">
-                                    <p>{portaVoz.seguidores}</p>
+                            <div className="flex flex-col-reverse items-end absolute bottom-25 right-[-20px] gap-2.5">
+                                <div className="bg-white pt-2.5 pb-2.5 pr-7.5 pl-7.5 rounded-[20px] w-min whitespace-nowrap">
+                                    <p className="text-[#924953] font-bold">{portaVoz.seguidores}</p>
                                 </div>
                                 {portaVoz.votos && 
-                                    <div className="pv-card-votos-card">
-                                        <p>{portaVoz.votos}</p>
+                                    <div className="bg-white pt-2.5 pb-2.5 pr-7.5 pl-7.5 rounded-[20px] w-min whitespace-nowrap">
+                                        <p className="text-[#924953] font-bold">{portaVoz.votos}</p>
                                     </div>}
                             </div>
                         </div>

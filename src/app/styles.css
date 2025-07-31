@@ -1,4 +1,19 @@
 @import "tailwindcss";
+
+
+@theme{
+  --animate-slider: 20s infinite slide linear;
+  --animate-slow-slider: 40s infinite slide linear;
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-1925px);
+  }
+}
+}
 * {
     box-sizing: border-box;
     max-width: 100%;

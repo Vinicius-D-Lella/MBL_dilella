@@ -2,7 +2,6 @@
 
 import PVcard from "../PVcard";
 import { useState } from "react";
-import "./index.css";
 
 export default function PVlist() {
 
@@ -362,20 +361,20 @@ function filterPortaVozesByTag(tag: string) {
     });
 }
 
-  return (<div className="pvlist-container">
-    <div className="pvlist-buttons">
-        <p className={`${buttonPressed === "Todos" ? 'active' : ''}`} onClick={returnToOriginalOrder}>Todos</p>
-        <p className={`${buttonPressed === "A-Z" ? 'active' : ''}`} onClick={sortPortaVozesAZ}>A-Z</p>
-        <p className={`${buttonPressed === "Nacional" ? 'active' : ''}`} onClick={() => filterPortaVozesByTag("Nacional")}>Nacional</p>
-        <p className={`${buttonPressed === "Nordeste" ? 'active' : ''}`} onClick={() => filterPortaVozesByTag("Nordeste")}>Nordeste</p>
-        <p className={`${buttonPressed === "Sudeste" ? 'active' : ''}`} onClick={() => filterPortaVozesByTag("Sudeste")}>Sudeste</p>
-        <p className={`${buttonPressed === "Sul" ? 'active' : ''}`} onClick={() => filterPortaVozesByTag("Sul")}>Sul</p>
-        <p className={`${buttonPressed === "Dep. Federal" ? 'active' : ''}`} onClick={() => filterPortaVozesByTag("Dep. Federal")}>Dep. Federal</p>
-        <p className={`${buttonPressed === "Dep. Estadual" ? 'active' : ''}`} onClick={() => filterPortaVozesByTag("Dep. Estadual")}>Dep. Estadual</p>
-        <p className={`${buttonPressed === "Vice-Prefeita" ? 'active' : ''}`} onClick={() => filterPortaVozesByTag("Vice-Prefeita")}>Vice-Prefeita</p>
-        <p className={`${buttonPressed === "Vereadores" ? 'active' : ''}`} onClick={() => filterPortaVozesByTag("Vereadores")}>Vereadores</p>
+  return (<div className="flex flex-col items-center w-full p-5">
+    <div className="flex justify-center flex-row gap-5">
+        <p className={`text-[16px] cursor-pointer ${buttonPressed === "Todos" ? 'text-[#000]' : 'text-[#999]'}`} onClick={returnToOriginalOrder}>Todos</p>
+        <p className={`text-[16px] cursor-pointer ${buttonPressed === "A-Z" ? 'text-[#000]' : 'text-[#999]'}`} onClick={sortPortaVozesAZ}>A-Z</p>
+        <p className={`text-[16px] cursor-pointer ${buttonPressed === "Nacional" ? 'text-[#000]' : 'text-[#999]'}`} onClick={() => filterPortaVozesByTag("Nacional")}>Nacional</p>
+        <p className={`text-[16px] cursor-pointer ${buttonPressed === "Nordeste" ? 'text-[#000]' : 'text-[#999]'}`} onClick={() => filterPortaVozesByTag("Nordeste")}>Nordeste</p>
+        <p className={`text-[16px] cursor-pointer ${buttonPressed === "Sudeste" ? 'text-[#000]' : 'text-[#999]'}`} onClick={() => filterPortaVozesByTag("Sudeste")}>Sudeste</p>
+        <p className={`text-[16px] cursor-pointer ${buttonPressed === "Sul" ? 'text-[#000]' : 'text-[#999]'}`} onClick={() => filterPortaVozesByTag("Sul")}>Sul</p>
+        <p className={`text-[16px] cursor-pointer ${buttonPressed === "Dep. Federal" ? 'text-[#000]' : 'text-[#999]'}`} onClick={() => filterPortaVozesByTag("Dep. Federal")}>Dep. Federal</p>
+        <p className={`text-[16px] cursor-pointer ${buttonPressed === "Dep. Estadual" ? 'text-[#000]' : 'text-[#999]'}`} onClick={() => filterPortaVozesByTag("Dep. Estadual")}>Dep. Estadual</p>
+        <p className={`text-[16px] cursor-pointer ${buttonPressed === "Vice-Prefeita" ? 'text-[#000]' : 'text-[#999]'}`} onClick={() => filterPortaVozesByTag("Vice-Prefeita")}>Vice-Prefeita</p>
+        <p className={`text-[16px] cursor-pointer ${buttonPressed === "Vereadores" ? 'text-[#000]' : 'text-[#999]'}`} onClick={() => filterPortaVozesByTag("Vereadores")}>Vereadores</p>
     </div>
-    <div className="pvlist">
+    <div className="flex flex-wrap justify-center gap-5 p-5 w-250">
         { filteredPortaVozes.map((portaVoz, index) => (
             <PVcard
                 key={index}

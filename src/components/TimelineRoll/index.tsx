@@ -1,5 +1,4 @@
 import TimelineCard from '../TimelineCard';
-import './index.css';
 
 const years = [
     { 
@@ -107,9 +106,9 @@ const years = [
 
 export default function TimelineRoll() {
     return (
-        <div className="timeline-roll">
-            <h2 className="mbl-title">Timeline do Movimento Brasil Livre</h2>
-            <div className='timeline-cards'>
+        <div className="flex items-center flex-col justify-center">
+            <h2 className="font-bold text-[28px] tracking-[-0.4px] text-left">Timeline do Movimento Brasil Livre</h2>
+            <div className='pt-12.5'>
             {
                 years.map((yearData, index) => (
                     <TimelineCard

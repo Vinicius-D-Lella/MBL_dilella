@@ -1,6 +1,3 @@
-import Link from "next/link";
-import "./index.css";
-
 export interface PVcardInterface{
     name: string;
     desc: string;
@@ -15,56 +12,56 @@ export interface PVcardInterface{
 
 export default function PVcard(props: PVcardInterface) {
   return (
-<div className="card">
+<div className="flex flex-row items-center gap-10 justify-center p-10 w-full bg-white rounded-[30px]">
 
-        <div className="image-container">
+        <div className="flex flex-row items-center relative w-[250px] h-[350px]">
             <img
-            className="image"
+            className="object-contain w-full h-full"
             src={props.src}
             alt={props.name}
             /> 
-            <div className="numeros">
-            {props.votos && <p className="number_info">{props.votos}</p>}
-            <p className="number_info">{props.seguidores}</p>
+            <div className="flex flex-col items-end w-min absolute bottom-11 left-[-100px] gap-3 ju">
+            {props.votos && <p className="whitespace-nowrap shadow-2xl text-center font-bold text[16px] bg-white text-[#924953] rounded-[30px] pt-2.5 pb-2.5 pr-7.5 pl-7.5">{props.votos}</p>}
+            <p className="whitespace-nowrap shadow-2xl text-center font-bold text[16px] bg-white text-[#924953] rounded-[30px] pt-2.5 pb-2.5 pr-7.5 pl-7.5">{props.seguidores}</p>
             </div>
         </div>
-        <div className="social-infos">
-            <div className="h1-container">
-            <h1>{props.name}</h1>
+        <div className="w-90">
+            <div className="pb-5">
+            <h1 className="text-[24px] font-bold text-[#924953]  ">{props.name}</h1>
             </div>
-            <div className="p-container">
-            <p>{props.desc}</p>
+            <div className="pb-5">
+            <p className="text-[18px] font-normal text-[#666]">{props.desc}</p>
             </div>
-            <div className="icons-container">
+            <div className="flex flex-row">
                 {props.instagram && (
-                    <Link href={props.instagram}>
+                    <a href={props.instagram}>
                         <img
                             className="icons"
                             alt={"Instagram " + props.name}
                             src="icons8-instagram.svg" 
                             width={20} 
                             height={20}/> 
-                    </Link>
+                    </a>
                 )}
                 {props.youtube && (
-                    <Link href={props.youtube}>
+                    <a href={props.youtube}>
                         <img
                         className="icons"
                         alt={"Youtube " + props.name}
                         src="icons8-youtube.svg" 
                         width={20} 
                         height={20}/> 
-                    </Link>
+                    </a>
                 )}
                 {props.x && (
-                    <Link href={props.x}>
+                    <a href={props.x}>
                         <img
                             className="icons"
                             alt={"X " + props.name}
                             src="icons8-x.svg"
                             width={20}
                             height={20}/>
-                    </Link>
+                    </a>
                 )}
                 </div>
         </div>
