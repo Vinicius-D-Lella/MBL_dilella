@@ -3,7 +3,11 @@ export default function Newsletter() {
         <section id="newsletter" className='flex justify-center items-center sticky p-7.5 bg-transparent text-[gray] gap-[5%]'>
             <div className="flex flex-col items-center w-100">
                 <div className="flex justify-start w-full pt-5 pb-5">
-                    <img height={30} width={30} src="/newsletter.svg" alt="Newsletter Image" />
+                    <div className="w-7.5 h-7.5">
+                        <svg className="w-full h-full">
+                            <use width="30px" height="30px" href="/newsletter.svg"></use>
+                        </svg>
+                    </div>
                     <h2 className='text-black pl-5 font-bold text-[28px]'>Assine a nossa newsletter</h2>
                 </div>
                 <p className='text-black text-[18px]/[1.2em] font-normal bg-transparent tracking-[-0.02em]'>Como assinante da nossa newsletter, você recebe análises exclusivas
