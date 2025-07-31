@@ -17,17 +17,16 @@ export default function Navbar() {
     ];
 
     const pathname = usePathname();
-
     return (
         <header className="content-center items-center flex flex-row h-17.5 bg-[#f9f9f9] w-full flex-none flex-nowrap left-0 top-0 fixed z-10">
             <nav className="content-center items-center flex flex-1 flex-row justify-around flex-nowrap h-min pr-10 pl-10 overflow-visible relative max-w-300">
                 <a
                 href="/MBL_dilella">
-                    <img 
-                    alt="logo do header" 
-                    src="/logo_mbl.svg"
-                    className="w-18.5 h-7"
-                    /> 
+                    <div className="w-18.5 h-7 z-10">
+                        <svg className="w-full h-full">
+                            <use width="74px" height="28px" href="logo_mbl.svg"></use>
+                        </svg>
+                    </div>
                 </a>
                 <div className="flex flex-row items-center gap-5">
                 <ul className="flex gap-6.25 items-center list-none text-2xl font-medium">
