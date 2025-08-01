@@ -4,6 +4,7 @@ import NavItem, {NavItemInterface} from "../NavItem";
 import { usePathname } from "next/navigation";
 
 import logo_mbl from "public/logo_mbl.svg"
+import { LogoMBL } from "../svgs";
 
 
 export default function Navbar() {
@@ -28,7 +29,7 @@ export default function Navbar() {
                     <div className="w-18.5 h-7 z-10">
                     <Image
                         priority
-                        src="logo_mbl.svg"
+                        src={LogoMBL}
                         height={28}
                         width={74}
                         alt="logo"
