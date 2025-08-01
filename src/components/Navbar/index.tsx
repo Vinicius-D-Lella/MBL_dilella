@@ -24,7 +24,7 @@ export default function Navbar() {
                 href="/MBL_dilella">
                     <div className="w-18.5 h-7 z-10">
                         <svg className="w-full h-full">
-                            <use width="74px" height="28px" href="/logo_mbl.svg"></use>
+                            <use className="w-18.5 h-7" width="74px" height="28px" href="/logo_mbl.svg"></use>
                         </svg>
                     </div>
                 </a>
