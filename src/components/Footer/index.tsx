@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { FacebookLogo, InstagramLogo, LogoMBL, TiktokLogo, XLogo, YoutubeLogo } from "../svgs";
+
 export default function Footer() {
     const currentYear = new Date().getFullYear();
     return (
@@ -8,9 +11,13 @@ export default function Footer() {
             <a className=""
                 href="/">
                     <div className="w-18.5 h-7">
-                        <svg className="w-full h-full">
-                            <use width="74px" height="28px" href="/logo_mbl.svg"></use>
-                        </svg>
+                    <Image
+                        priority
+                        src={LogoMBL}
+                        height={28}
+                        width={74}
+                        alt="logo_footer"
+                    />
                     </div>
                 </a>
             <p className=" font-normal text-[12px]">© MBL {currentYear} | Todos os direitos reservados.</p>
@@ -19,42 +26,62 @@ export default function Footer() {
             <a
                 href="https://www.youtube.com/@MBLiveTV">
                     <div className="w-5 h-5">
-                        <svg className="w-full h-full">
-                            <use width="20px" height="20px" href="/icons8-youtube.svg"></use>
-                        </svg>
+                    <Image
+                        priority
+                        src={YoutubeLogo}
+                        height={20}
+                        width={20}
+                        alt="youtube"
+                    />
                     </div>
                 </a>
 
                         <a
                 href="https://www.instagram.com/mblivre/">
                     <div className="w-5 h-5">
-                        <svg className="w-full h-full">
-                            <use width="20px" height="20px" href="/icons8-instagram.svg" ></use>
-                        </svg>
+                    <Image
+                        priority
+                        src={InstagramLogo}
+                        height={20}
+                        width={20}
+                        alt="instagram"
+                    />
                     </div>
                 </a>
                             <a
                 href="https://x.com/MBLivre">
                     <div className="w-5 h-5">
-                        <svg className="w-full h-full">
-                            <use width="20px" height="20px" href="/icons8-x.svg"  ></use>
-                        </svg>
+                    <Image
+                        priority
+                        src={XLogo}
+                        height={20}
+                        width={20}
+                        alt="x"
+                    />
                     </div>
                 </a>
                             <a
                 href="https://www.facebook.com/mblivre">
                     <div className="w-5 h-5">
-                        <svg className="w-full h-full">
-                            <use width="20px" height="20px" href="/icons8-facebook.svg"  ></use>
-                        </svg>
+                    <Image
+                        priority
+                        src={FacebookLogo}
+                        height={20}
+                        width={20}
+                        alt="facebook"
+                    />
                     </div>
                 </a>
                             <a
                 href="https://www.tiktok.com/@mblivre">
                     <div className="w-5 h-5">
-                        <svg className="w-full h-full">
-                            <use width="20px" height="20px" href="/icons8-tiktok.svg"  ></use>
-                        </svg>
+                    <Image
+                        priority
+                        src={TiktokLogo}
+                        height={20}
+                        width={20}
+                        alt="tiktok"
+                    />
                     </div>
                 </a>
                 </div>

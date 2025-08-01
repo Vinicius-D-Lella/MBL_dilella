@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { InstagramLogo, XLogo, YoutubeLogo } from "../svgs";
+
 export interface PVcardInterface{
     name: string;
     desc: string;
@@ -15,7 +18,7 @@ export default function PVcard(props: PVcardInterface) {
 <div className="flex flex-row items-center gap-10 justify-center p-10 w-full bg-white rounded-[30px]">
 
         <div className="flex flex-row items-center relative w-[250px] h-[350px]">
-            <img
+            <Image
             className="object-contain w-full h-full"
             src={props.src}
             alt={props.name}
@@ -35,30 +38,30 @@ export default function PVcard(props: PVcardInterface) {
             <div className="flex flex-row">
                 {props.instagram && (
                     <a href={props.instagram}>
-                        <img
+                        <Image
                             className="icons"
                             alt={"Instagram " + props.name}
-                            src="icons8-instagram.svg" 
+                            src={InstagramLogo}
                             width={20} 
                             height={20}/> 
                     </a>
                 )}
                 {props.youtube && (
                     <a href={props.youtube}>
-                        <img
+                        <Image
                         className="icons"
                         alt={"Youtube " + props.name}
-                        src="icons8-youtube.svg" 
+                        src={YoutubeLogo} 
                         width={20} 
                         height={20}/> 
                     </a>
                 )}
                 {props.x && (
                     <a href={props.x}>
-                        <img
+                        <Image
                             className="icons"
                             alt={"X " + props.name}
-                            src="icons8-x.svg"
+                            src={XLogo}
                             width={20}
                             height={20}/>
                     </a>

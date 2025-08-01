@@ -1,12 +1,19 @@
+import Image from "next/image";
+import { NewsletterImg } from "../svgs";
+
 export default function Newsletter() {
     return (
         <section id="newsletter" className='flex justify-center items-center sticky p-7.5 bg-transparent text-[gray] gap-[5%]'>
             <div className="flex flex-col items-center w-100">
                 <div className="flex justify-start w-full pt-5 pb-5">
                     <div className="w-7.5 h-7.5">
-                        <svg className="w-full h-full">
-                            <use width="30px" height="30px" href="/newsletter.svg"></use>
-                        </svg>
+                    <Image
+                        priority
+                        src={NewsletterImg}
+                        height={30}
+                        width={30}
+                        alt="logo-news"
+                    />
                     </div>
                     <h2 className='text-black pl-5 font-bold text-[28px]'>Assine a nossa newsletter</h2>
                 </div>

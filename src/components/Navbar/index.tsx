@@ -2,8 +2,6 @@
 import Image from "next/image";
 import NavItem, {NavItemInterface} from "../NavItem";
 import { usePathname } from "next/navigation";
-
-import logo_mbl from "public/logo_mbl.svg"
 import { LogoMBL } from "../svgs";
 
 

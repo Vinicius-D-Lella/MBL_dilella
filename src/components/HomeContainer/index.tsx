@@ -5,6 +5,8 @@ import NewsRoll from "../NewsRoll";
 import PVslider from "../PVslider";
 import TimelineCard from "../TimelineCard";
 import Newsletter from "../Newsletter";
+import Image from "next/image";
+import { DownWhite } from "../svgs";
 
 const years = [
     { 
@@ -238,7 +240,12 @@ export default function HomeContainer(){
                     CONTINUA
                 </a>
                 </div>
-                <img className="w-6.25" src="down-chevron-svgrepo-com.svg"/>
+                    <Image
+                        priority
+                        src={DownWhite}
+                        width={25}
+                        alt="logo"
+                    />
 
               
             </div>
