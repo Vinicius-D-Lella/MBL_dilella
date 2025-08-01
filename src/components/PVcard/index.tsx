@@ -22,6 +22,8 @@ export default function PVcard(props: PVcardInterface) {
             className="object-contain w-full h-full"
             src={props.src}
             alt={props.name}
+            width={250}
+            height={350}
             /> 
             <div className="flex flex-col items-end w-min absolute bottom-11 left-[-100px] gap-3 ju">
             {props.votos && <p className="whitespace-nowrap shadow-2xl text-center font-bold text[16px] bg-white text-[#924953] rounded-[30px] pt-2.5 pb-2.5 pr-7.5 pl-7.5">{props.votos}</p>}
