@@ -28,7 +28,7 @@ export default function Navbar() {
                     <div className="w-18.5 h-7 z-10">
                     <Image
                         priority
-                        src="/logo_mbl.svg"
+                        src="logo_mbl.svg"
                         height={28}
                         width={74}
                         alt="logo"
