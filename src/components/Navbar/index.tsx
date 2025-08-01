@@ -1,6 +1,9 @@
 "use client"
+import Image from "next/image";
 import NavItem, {NavItemInterface} from "../NavItem";
 import { usePathname } from "next/navigation";
+
+import logo_mbl from "public/logo_mbl.svg"
 
 
 export default function Navbar() {
@@ -23,9 +26,13 @@ export default function Navbar() {
                 <a
                 href="/MBL_dilella">
                     <div className="w-18.5 h-7 z-10">
-                        <svg className="w-full h-full">
-                            <use className="w-18.5 h-7" width="74px" height="28px" href="./logo_mbl.svg"></use>
-                        </svg>
+                    <Image
+                        priority
+                        src="/logo_mbl.svg"
+                        height={28}
+                        width={74}
+                        alt="logo"
+                    />
                     </div>
                 </a>
                 <div className="flex flex-row items-center gap-5">
